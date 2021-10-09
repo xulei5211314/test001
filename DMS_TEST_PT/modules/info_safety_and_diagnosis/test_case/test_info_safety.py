@@ -7,7 +7,7 @@ from modules.info_safety_and_diagnosis.pylib.info_safety import *
 
 def test_infor_sf_1(reboot_j2):
     ret = common_lib.serial_cmd("root")
-    assert "Passw11111ord" in ret
+    assert "Passw122221111ord" in ret
 
 def test_infor_sf_2(reboot_j2):
     ret = common_lib.serial_cmd("root")
