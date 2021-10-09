@@ -1,0 +1,554 @@
+[
+	{
+		"SoureModuleObjName": "input",
+		"SoureModuleType": "MODULE_INPUT",
+		"SlotType": [
+			"SLOT_IMG"
+		],
+		"DestModuleObjName": "pack_input0",
+		"DestModuleType": "MODULE_PACKINPUT",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "input_imagecache",
+		"SoureModuleType": "MODULE_INPUT",
+		"SlotType": [
+			"SLOT_IMG"
+		],
+		"DestModuleObjName": "image_cache",
+		"DestModuleType": "MODULE_IMAGECACHE",
+		"DestForward": 2
+	},
+	{
+		"SoureModuleObjName": "pack_input0",
+		"SoureModuleType": "MODULE_PACKINPUT",
+		"SlotType": [
+			"SLOT_IMG"
+		],
+		"DestModuleObjName": "face0",
+		"DestModuleType": "MODULE_FACEHAND",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "pack_input0",
+		"SoureModuleType": "MODULE_PACKINPUT",
+		"SlotType": [
+			"SLOT_IMG"
+		],
+		"DestModuleObjName": "image_check0",
+		"DestModuleType": "MODULE_IMAGECHECK",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "image_check0",
+		"SoureModuleType": "MODULE_IMAGECHECK",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_IMGCHECK"
+		],
+		"DestModuleObjName": "face0",
+		"DestModuleType": "MODULE_FACEHAND",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "image_check0",
+		"SoureModuleType": "MODULE_IMAGECHECK",
+		"SlotType": [
+			"SLOT_IMGCHECK"
+		],
+		"DestModuleObjName": "post",
+		"DestModuleType": "MODULE_POSTPROCESS",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "face0",
+		"SoureModuleType": "MODULE_FACEHAND",
+		"SrcForward": 0,
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_CNNHANDLE"
+		],
+		"DestModuleObjName": "face0",
+		"DestModuleType": "MODULE_FACEHAND",
+		"DestForward": 2
+	},
+	{
+		"SoureModuleObjName": "face0",
+		"SoureModuleType": "MODULE_FACEHAND",
+		"SrcForward": 2,
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE",
+			"SLOT_BODY",
+			"SLOT_HAND"
+		],
+		"DestModuleObjName": "target_track",
+		"DestModuleType": "MODULE_TARGETTRACK",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "target_track",
+		"SoureModuleType": "MODULE_TARGETTRACK",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE"
+		],
+		"DestModuleObjName": "facequality",
+		"DestModuleType": "MODULE_FACEQUA",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "facequality",
+		"SoureModuleType": "MODULE_FACEQUA",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE",
+			"SLOT_FACEQUA"
+		],
+		"DestModuleObjName": "expression",
+		"DestModuleType": "MODULE_EXPRESSION",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "ldmk",
+		"SoureModuleType": "MODULE_LDMK",
+		"SlotType": [
+			"SLOT_LDMK"
+		],
+		"DestModuleObjName": "expression",
+		"DestModuleType": "MODULE_EXPRESSION",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "target_track",
+		"SoureModuleType": "MODULE_TARGETTRACK",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE",
+			"SLOT_HAND",
+			"SLOT_BODY"
+		],
+		"DestModuleObjName": "ldmk",
+		"DestModuleType": "MODULE_LDMK",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "target_track",
+		"SoureModuleType": "MODULE_TARGETTRACK",
+		"SlotType": [
+			"SLOT_IMG"
+		],
+		"DestModuleObjName": "jpeg",
+		"DestModuleType": "MODULE_JPEG",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "facequality",
+		"SoureModuleType": "MODULE_FACEQUA",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE",
+			"SLOT_FACEQUA"
+		],
+		"DestModuleObjName": "spoof_det",
+		"DestModuleType": "MODULE_SPOOFDETECT",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "spoof_det",
+		"SoureModuleType": "MODULE_SPOOFDETECT",
+		"SlotType": [
+			"SLOT_SPOOFDETECT",
+			"SLOT_IMG",
+			"SLOT_FACE",
+			"SLOT_LDMK",
+			"SLOT_FACEQUA"
+		],
+		"DestModuleObjName": "faceid",
+		"DestModuleType": "MODULE_FACEID",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "ldmk",
+		"SoureModuleType": "MODULE_LDMK",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE",
+			"SLOT_LDMK"
+		],
+		"DestModuleObjName": "spoof_det",
+		"DestModuleType": "MODULE_SPOOFDETECT",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "ldmk",
+		"SoureModuleType": "MODULE_LDMK",
+		"SlotType": [
+			"SLOT_LDMK"
+		],
+		"DestModuleObjName": "target_track",
+		"DestModuleType": "MODULE_TARGETTRACK",
+		"DestForward": 2
+	},
+	{
+		"SoureModuleObjName": "ldmk",
+		"SoureModuleType": "MODULE_LDMK",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE",
+			"SLOT_LDMK",
+			"SLOT_HAND",
+			"SLOT_BODY"
+		],
+		"DestModuleObjName": "phone",
+		"DestModuleType": "MODULE_PHONE",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "ldmk",
+		"SoureModuleType": "MODULE_LDMK",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE",
+			"SLOT_LDMK",
+			"SLOT_HAND"
+		],
+		"DestModuleObjName": "smoke",
+		"DestModuleType": "MODULE_SMOKE",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "ldmk",
+		"SoureModuleType": "MODULE_LDMK",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE",
+			"SLOT_LDMK"
+		],
+		"DestModuleObjName": "sightdir",
+		"DestModuleType": "MODULE_SIGHTDIR",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "facequality",
+		"SoureModuleType": "MODULE_FACEQUA",
+		"SlotType": [
+			"SLOT_FACEQUA"
+		],
+		"DestModuleObjName": "sightdir",
+		"DestModuleType": "MODULE_SIGHTDIR",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "sightdir",
+		"SoureModuleType": "MODULE_SIGHTDIR",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_REDUNDANCY"
+		],
+		"DestModuleObjName": "redundancy",
+		"DestModuleType": "MODULE_REDUNDANCY_DETECT",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "redundancy",
+		"SoureModuleType": "MODULE_REDUNDANCY_DETECT",
+		"SlotType": [
+			"SLOT_IMG"
+		],
+		"DestModuleObjName": "post",
+		"DestModuleType": "MODULE_POSTPROCESS",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "sightdir",
+		"SoureModuleType": "MODULE_SIGHTDIR",
+		"SlotType": [
+			"SLOT_EYE"
+		],
+		"DestModuleObjName": "faceid",
+		"DestModuleType": "MODULE_FACEID",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "phone",
+		"SoureModuleType": "MODULE_PHONE",
+		"SlotType": [
+			"SLOT_PHONE",
+			"SLOT_HAND",
+			"SLOT_BODY"
+		],
+		"DestModuleObjName": "post",
+		"DestModuleType": "MODULE_POSTPROCESS",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "smoke",
+		"SoureModuleType": "MODULE_SMOKE",
+		"SlotType": [
+			"SLOT_SMOKE"
+		],
+		"DestModuleObjName": "post",
+		"DestModuleType": "MODULE_POSTPROCESS",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "sightdir",
+		"SoureModuleType": "MODULE_SIGHTDIR",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE",
+			"SLOT_LDMK",
+			"SLOT_EYE",
+			"SLOT_EYELDMK",
+			"SLOT_SIGHTDIR"
+		],
+		"DestModuleObjName": "post",
+		"DestModuleType": "MODULE_POSTPROCESS",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "faceid",
+		"SoureModuleType": "MODULE_FACEID",
+		"SlotType": [
+			"SLOT_LDMK5",
+			"SLOT_FACEID",
+			"SLOT_SPOOFDETECT",
+			"SLOT_AGEGENDER",
+			"SLOT_FACEQUA"
+		],
+		"DestModuleObjName": "post",
+		"DestModuleType": "MODULE_POSTPROCESS",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "expression",
+		"SoureModuleType": "MODULE_EXPRESSION",
+		"SlotType": [
+			"SLOT_EXPRESSION"
+		],
+		"DestModuleObjName": "post",
+		"DestModuleType": "MODULE_POSTPROCESS",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "sightdir",
+		"SoureModuleType": "MODULE_SIGHTDIR",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE",
+			"SLOT_LDMK",
+			"SLOT_EYE",
+			"SLOT_EYELDMK"
+		],
+		"DestModuleObjName": "fatigue",
+		"DestModuleType": "MODULE_FATIGUE",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "phone",
+		"SoureModuleType": "MODULE_PHONE",
+		"SlotType": [
+			"SLOT_PHONE"
+		],
+		"DestModuleObjName": "fatigue",
+		"DestModuleType": "MODULE_FATIGUE",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "smoke",
+		"SoureModuleType": "MODULE_SMOKE",
+		"SlotType": [
+			"SLOT_SMOKE"
+		],
+		"DestModuleObjName": "fatigue",
+		"DestModuleType": "MODULE_FATIGUE",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "faceid",
+		"SoureModuleType": "MODULE_FACEID",
+		"SlotType": [
+			"SLOT_AGEGENDER",
+			"SLOT_FACEQUA"
+		],
+		"DestModuleObjName": "fatigue",
+		"DestModuleType": "MODULE_FATIGUE",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "fatigue",
+		"SoureModuleType": "MODULE_FATIGUE",
+		"SlotType": [
+			"SLOT_FATIGUE"
+		],
+		"DestModuleObjName": "post",
+		"DestModuleType": "MODULE_POSTPROCESS",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "post",
+		"SoureModuleType": "MODULE_POSTPROCESS",
+		"SlotType": [
+			"SLOT_PERCEPTION"
+		],
+		"DestModuleObjName": "event",
+		"DestModuleType": "MODULE_EVENT",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "jpeg",
+		"SoureModuleType": "MODULE_JPEG",
+		"SlotType": [
+			"SLOT_IMG"
+		],
+		"DestModuleObjName": "post",
+		"DestModuleType": "MODULE_POSTPROCESS",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "event",
+		"SoureModuleType": "MODULE_EVENT",
+		"SlotType": [
+			"SLOT_PERCEPTION"
+		],
+		"DestModuleObjName": "dispatch",
+		"DestModuleType": "MODULE_EVENT_DISPATCH",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "dispatch",
+		"SoureModuleType": "MODULE_EVENT_DISPATCH",
+		"SlotType": [
+			"SLOT_PERCEPTION",
+			"SLOT_PROTO"
+		],
+		"DestModuleObjName": "image_cache",
+		"DestModuleType": "MODULE_IMAGECACHE",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "image_cache",
+		"SoureModuleType": "MODULE_IMAGECACHE",
+		"SlotType": [
+			"SLOT_PERCEPTION"
+		],
+		"DestModuleObjName": "term",
+		"DestModuleType": "MODULE_TERMINATOR",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "dispatch",
+		"SoureModuleType": "MODULE_EVENT_DISPATCH",
+		"SlotType": [
+			"SLOT_PERCEPTION"
+		],
+		"DestModuleObjName": "term",
+		"DestModuleType": "MODULE_TERMINATOR",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "event",
+		"SoureModuleType": "MODULE_EVENT",
+		"SlotType": [
+			"SLOT_PERCEPTION"
+		],
+		"DestModuleObjName": "spi_dispatch",
+		"DestModuleType": "MODULE_SPIDISPATCH",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "spi_dispatch",
+		"SoureModuleType": "MODULE_SPIDISPATCH",
+		"SlotType": [
+			"SLOT_PERCEPTION"
+		],
+		"DestModuleObjName": "term",
+		"DestModuleType": "MODULE_TERMINATOR",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "ldmk",
+		"SoureModuleType": "MODULE_LDMK",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_LDMK",
+			"SLOT_FACE"
+		],
+		"DestModuleObjName": "lipsmovevision",
+		"DestModuleType": "MODULE_LIPSMOVEVISION",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "lipsmovevision",
+		"SoureModuleType": "MODULE_LIPSMOVEVISION",
+		"SlotType": [
+			"SLOT_IMG",
+      "SLOT_LIPS_MOVE"
+		],
+		"DestModuleObjName": "lips_mmvad",
+		"DestModuleType": "MODULE_MMVAD",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "lipsmovevision",
+		"SoureModuleType": "MODULE_LIPSMOVEVISION",
+		"SlotType": [
+			"SLOT_LIPS_MOVE"
+		],
+		"DestModuleObjName": "post",
+		"DestModuleType": "MODULE_POSTPROCESS",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "input",
+		"SoureModuleType": "MODULE_INPUT",
+		"SlotType": [
+			"SLOT_IMG"
+		],
+		"DestModuleObjName": "lips_mmvad",
+		"DestModuleType": "MODULE_MMVAD",
+		"DestForward": 1
+	},
+	{
+		"SoureModuleObjName": "target_track",
+		"SoureModuleType": "MODULE_TARGETTRACK",
+		"SlotType": [
+			"SLOT_IMG",
+			"SLOT_FACE"
+		],
+		"DestModuleObjName": "lips_multi",
+		"DestModuleType": "MODULE_LIPSMULTI",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "lips_multi",
+		"SoureModuleType": "MODULE_LIPSMULTI",
+		"SlotType": [
+			"SLOT_SPEECH"
+		],
+		"DestModuleObjName": "dispatch",
+		"DestModuleType": "MODULE_EVENT_DISPATCH",
+		"DestForward": 0
+	},
+	{
+		"SoureModuleObjName": "speech",
+		"SoureModuleType": "MODULE_SPEECH",
+		"SlotType": [
+			"SLOT_VAD_C01"
+		],
+		"DestModuleObjName": "lips_multi",
+		"DestModuleType": "MODULE_LIPSMULTI",
+		"DestForward": 1
+	},
+	{
+		"SoureModuleObjName": "speech",
+		"SoureModuleType": "MODULE_SPEECH",
+		"SlotType": [
+			"SLOT_VAD_C02"
+		],
+		"DestModuleObjName": "lips_multi",
+		"DestModuleType": "MODULE_LIPSMULTI",
+		"DestForward": 2
+	}
+]

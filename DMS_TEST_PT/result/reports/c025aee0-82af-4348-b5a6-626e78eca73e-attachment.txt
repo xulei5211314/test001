@@ -1,0 +1,7 @@
+INFO     C:\Users\lei01.xu\Desktop\地平线\项目\DMS_TEST_PT\_library\..\result\log\2021-09-24_log.log:prase_ini.py:23 GLOBAL_PROJECT_CFG:{'CARTYPE': 'DA_PDT', 'ID': 'device', 'SERIAL_PORT': '115200', 'LOG_LEVEL': 'debug', 'LOG_PATH': '', 'RERUNS': '0'}
+INFO     C:\Users\lei01.xu\Desktop\地平线\项目\DMS_TEST_PT\_library\..\result\log\2021-09-24_log.log:sys.py:129 adb root
+INFO     C:\Users\lei01.xu\Desktop\地平线\项目\DMS_TEST_PT\_library\..\result\log\2021-09-24_log.log:sys.py:139 
+INFO     C:\Users\lei01.xu\Desktop\地平线\项目\DMS_TEST_PT\_library\..\result\log\2021-09-24_log.log:sys.py:129 adb remount
+INFO     C:\Users\lei01.xu\Desktop\地平线\项目\DMS_TEST_PT\_library\..\result\log\2021-09-24_log.log:sys.py:139 
+ERROR    C:\Users\lei01.xu\Desktop\地平线\项目\DMS_TEST_PT\_library\..\result\log\2021-09-24_log.log:adb_lib.py:66 switch to root failed
+INFO     C:\Users\lei01.xu\Desktop\地平线\项目\DMS_TEST_PT\_library\..\result\log\2021-09-24_log.log:test_info_safety.py:102 assert

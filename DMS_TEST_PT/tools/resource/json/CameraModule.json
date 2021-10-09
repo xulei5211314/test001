@@ -1,0 +1,17 @@
+{
+    "skip_frames" : 0,
+    "wait_dms" : 1,
+    "use_vio_frame_id" : 1,
+    "enable_cameras": [
+        {
+            "id" : 0,
+            "type_rgb" : "rgb",
+            "type_ir" : "ir",
+            "types" : ["ir", "rgb"],
+	        "fps" : [1, 1],
+            "cam_config" : "hb_s202da.json",
+            "vio_config" : "vio_ov2311_ix019_max.json"
+        }
+]
+  }
+

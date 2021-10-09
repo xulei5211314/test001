@@ -1,0 +1,140 @@
+{
+  "HobotDMSContext" : {
+    "log_settings" : {
+      "verbose_level" : 1,
+      "info_file" : "/userdata/log/mm_log/mm"
+    },
+    "engine" : {
+      "redirect" : "engine.json"
+    },
+    "camera" : {
+      "redirect" : "",
+      "image_width" : 1280,
+      "image_height" : 960,
+      "param_path" : "CameraParam.xml"
+    },
+    "ProjectInfo" : {
+      "redirect" : "ProjectInfo.json"
+    }
+  },
+  "CameraModule" : {
+    "redirect" : "CameraModule.json"
+  },
+  "ImageCheckModule" : {
+    "redirect" : "ImageCheckModule.json"
+  },
+  "FaceHandDetectModule" : {
+    "redirect" : "FaceHandDetectModule.json"
+  },
+  "FaceExpressionModule" : {
+    "redirect" : "FaceExpression.json"
+  },
+  "AgeGenderModule" : {
+    "redirect" : "AgeGenderModule.json"
+  },
+  "CellPhoneClsfModule" : {
+    "redirect" : "CellPhoneClsfModule.json"
+  },
+  "LDMKModule" : {
+    "redirect" : "LDMKModule.json"
+  },
+  "LDMK5Module" : {
+    "redirect" : "LDMK5Module.json"
+  },
+  "EyeClsfModule" : {
+    "redirect" : "EyeClsfModule.json"
+  },
+  "EyeVisualModule" : {
+    "redirect" : "EyeVisualModule.json"
+  },
+  "FaceFilterModule" : {
+    "redirect" : "FaceFilterModule.json"
+  },
+  "FaceIDModule" : {
+    "redirect" : "FaceIDModule.json"
+  },
+  "SmokeClsfModule" : {
+    "redirect" : "SmokeClsfModule.json"
+  },
+  "DMSLipsMultiModel" : {
+    "redirect" : "LipsModel.json"
+  },
+  "LipsMoveVisionModule" : {
+    "redirect" : "LipsModel.json"
+  },
+  "LipsMultiVadModule": {
+    "redirect" : "LipsModel.json"
+  },
+  "SpeechModule" : {
+    "redirect" : "LipsModel.json"
+  },
+  "EventModule" : {
+    "redirect" : "EventModule.json"
+  },
+  "EventDispatchModule"  :   {
+    "event_map" : "event_map.json",
+    "write_proto" : 0,
+    "proto_file_path" : "/userdata/data/my.proto"
+  },
+  "SpiDispatchModule": {
+    "enable_print" : 0,
+    "enable_record" : 0
+  },
+  "PackInputModule"  :   {
+    "file_type":0,
+    "fb_way":0,
+    "file_path" : "/userdata/P3.pack",
+    "camera_type" : "ir",
+    "audio_file" : "./raw.pcm",
+    "time_file" : "./conf/time.data",
+    "fb_config" : "feed_back_960p.json"
+  },
+  "NetworkInputModule" : {
+    "fb_config" : "feed_back_960p.json",
+    "fb_multi_config" : "feed_back_multi.json",
+    "fix_camera_type": "",
+    "double_recharge": 0
+  },
+  "AudioInputModule" : {
+    "check_interval_s" : 10,
+    "raw_data_delay" : 200,
+    "invalid_audio_count" : 300
+  },
+  "SightDirModule"  :  {
+    "redirect" : "SightDirModule.json"
+  },
+  "FatigueRatingModule" : {
+    "redirect" : "FatigueRatingModule.json"
+  },
+  "FatigueDetectModule" : {
+    "redirect" : "FatigueDetectModule.json"
+  },
+  "SpoofDetectModule" : {
+    "redirect" : "SpoofDetectModule.json"
+  },
+  "MultiTargetInputModule" : {
+    "redirect" : "MultiTargetInputModule.json"
+  },
+  "TargetTrackModule" : {
+    "redirect" : "TargetTrackModule.json"
+  },
+  "Workflow" : {
+    "redirect" : "Pipelines.json"
+  },
+  "DataTransfer" : {
+    "redirect" : "Transfer.json"
+  },
+  "Model" : {
+    "file_path" : "../lib/models.hbm",
+    "bpu_config" : "bpu_config.json"
+  },
+  "FunctionMatrix" : {
+    "redirect" : "ModuleEnable.json"
+  },
+  "BpuCoreMap" : {
+    "redirect" : "BpuCoreModelMap.json"
+  },
+  "ThreadsMap" : {
+    "redirect01" : "ThreadsMap.json"
+  }
+}
