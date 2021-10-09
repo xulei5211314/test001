@@ -6,7 +6,7 @@ num1=10
 
 
 
-num3=300
+num3=300000000000000000000
 "swadsadddddddddddddddd" \
 "dasdddddddddddddddddddddddddddddddddddddd" \
 "sdddddddddd" \
